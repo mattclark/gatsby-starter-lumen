@@ -15,7 +15,7 @@ class IndexRoute extends React.Component {
         <div className="content">
           <div className="content__inner">
             <div className="page">
-              <h1 class="page__title">Consulting</h1>
+              <h1 className="page__title">Consulting</h1>
             I offer independent software consulting services for web application development. Not only for server-side software engineering, architecture, and development operations, but project management and operations security as well.
 
 For development I have often worked closely and collaboratively with customers as is outlined in the Agile methodology and the majority of projects that I’ve worked on have employed the Scrum framework to an extent.
