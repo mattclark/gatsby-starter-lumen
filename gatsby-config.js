@@ -1,30 +1,40 @@
 module.exports = {
   siteMetadata: {
-    url: 'https://lumen.netlify.com',
-    title: 'Blog by John Doe',
-    subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    url: 'http://mattclark.io',
+    title: 'mattclark.io',
+    // subtitle: 'Charlottesville Software Development, Project Management, & Security Consultant',
+    subtitle: '',
+    subtitle0: 'Software Engineering',
+    subtitle1: 'Operations Security',
+    subtitle2: 'Project Management',
     copyright: '© All rights reserved.',
     disqusShortname: '',
     menu: [
       {
-        label: 'Articles',
+        label: 'Consulting',
         path: '/'
       },
       {
-        label: 'About me',
-        path: '/about/'
+        label: 'Experience',
+        path: '/experience/'
       },
       {
-        label: 'Contact me',
-        path: '/contact/'
-      }
+        label: 'Services',
+        path: '/services/'
+      }//,
+      // {
+      //   label: 'Inquiries',
+      //   path: '/contact/'
+      // }
     ],
     author: {
-      name: 'John Doe',
+      name: 'Matt Clark',
       email: '#',
       telegram: '#',
       twitter: '#',
-      github: '#',
+      linkedin: 'mattclark-io',
+      github: 'mattclark',
+      speakerrate: '72781',
       rss: '#',
       vk: '#'
     }

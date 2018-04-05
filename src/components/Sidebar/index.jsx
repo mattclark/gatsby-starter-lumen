@@ -9,7 +9,7 @@ import './style.scss';
 class Sidebar extends React.Component {
   render() {
     const { location } = this.props;
-    const { author, subtitle, copyright, menu } = this.props.data.site.siteMetadata;
+    const { author, subtitle0, subtitle1, subtitle2, copyright, menu } = this.props.data.site.siteMetadata;
     const isHomePage = get(location, 'pathname', '/') === '/';
 
     /* eslint-disable jsx-a11y/img-redundant-alt */
@@ -19,8 +19,8 @@ class Sidebar extends React.Component {
           <img
             src={profilePic}
             className="sidebar__author-photo"
-            width="75"
-            height="75"
+            width="151"
+            height="175"
             alt={author.name}
           />
         </Link>
@@ -33,7 +33,7 @@ class Sidebar extends React.Component {
             <Link className="sidebar__author-title-link" to="/">{author.name}</Link>
           </h2>
         }
-        <p className="sidebar__author-subtitle">{subtitle}</p>
+        <p className="sidebar__author-subtitle">{subtitle0}<br />{subtitle1}<br />{subtitle2} </p>
       </div>
     );
     /* eslint-enable jsx-a11y/img-redundant-alt */

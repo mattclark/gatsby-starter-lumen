@@ -8,6 +8,8 @@ class Links extends React.Component {
     const links = {
       telegram: author.telegram,
       twitter: author.twitter,
+      linkedin: author.linkedin,
+      speakerrate: author.speakerrate,
       github: author.github,
       vk: author.vk,
       rss: author.rss,
@@ -17,9 +19,14 @@ class Links extends React.Component {
     return (
       <div className="links">
         <ul className="links__list">
+          {/* <li className="links__list-item"> */}
+          {/*   <a href={`https://www.twitter.com/${links.twitter}`} target="_blank" > */}
+          {/*     <i className="icon-twitter" /> */}
+          {/*   </a> */}
+          {/* </li> */}
           <li className="links__list-item">
-            <a href={`https://www.twitter.com/${links.twitter}`} target="_blank" >
-              <i className="icon-twitter" />
+            <a href={`https://www.linkedin.com/in/${links.linkedin}`} target="_blank" >
+              <i className="icon-linkedin" />
             </a>
           </li>
           <li className="links__list-item">
@@ -27,31 +34,37 @@ class Links extends React.Component {
               <i className="icon-github" />
             </a>
           </li>
+          {/* 72781 */}
           <li className="links__list-item">
-            <a href={`https://www.vk.com/${links.vk}`} target="_blank" >
-              <i className="icon-vkontakte" />
-            </a>
-          </li>
-        </ul>
-        <ul className="links__list">
-          <li className="links__list-item">
-            <a href={`mailto:${links.email}`}>
-              <i className="icon-mail" />
-            </a>
-          </li>
-          <li className="links__list-item">
-            <a href={`telegram:${links.telegram}`}>
+            <a href={`https://spkr8.com/t/${links.speakerrate}`} target="_blank" >
               <i className="icon-paper-plane" />
             </a>
           </li>
-        </ul>
-        <ul className="links__list">
-          <li className="links__list-item">
-            <a href={links.rss}>
-              <i className="icon-rss" />
-            </a>
-          </li>
-        </ul>
+        {/*   <li className="links__list-item"> */}
+        {/*     <a href={`https://www.vk.com/${links.vk}`} target="_blank" > */}
+        {/*       <i className="icon-vkontakte" /> */}
+        {/*     </a> */}
+        {/*   </li> */}
+        {/* </ul> */}
+        {/* <ul className="links__list"> */}
+        {/*   <li className="links__list-item"> */}
+        {/*     <a href={`mailto:${links.email}`}> */}
+        {/*       <i className="icon-mail" /> */}
+        {/*     </a> */}
+        {/*   </li> */}
+        {/*   <li className="links__list-item"> */}
+        {/*     <a href={`telegram:${links.telegram}`}> */}
+        {/*       <i className="icon-paper-plane" /> */}
+        {/*     </a> */}
+        {/*   </li> */}
+        {/* </ul> */}
+        {/* <ul className="links__list"> */}
+        {/*   <li className="links__list-item"> */}
+        {/*     <a href={links.rss}> */}
+        {/*       <i className="icon-rss" /> */}
+        {/*     </a> */}
+          {/* </li> */}
+    </ul>
       </div>
     );
   }
